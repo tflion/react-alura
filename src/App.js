@@ -8,8 +8,21 @@ import { Component } from "react";
 class App extends Component {
   
 
+  constructor(){
+    super();
+
+    this.state = {
+      notas:[]
+    }
+  }
+
   criarNota(titulo, texto){
-    console.log(`Uma nova nota foi criada:` + titulo + ` ` + texto)
+    const novaNota = {titulo,texto};
+    const novoArrayNotas = [...this.state.notas,novaNota]
+    const novoEstado = {
+      notas:novoArrayNotas
+    }
+    this.setState(novoEstado)
   }
 
   render() {
@@ -17,8 +30,8 @@ class App extends Component {
 
     return (
       <section className="conteudo">
-        <Formulario criarNota={this.criarNota} />
-        <ListaDeNotas />
+        <Formulario criarNota={this.criarNota.bind(this)} />
+        <ListaDeNotas notas={this.state.notas}/>
       </section>
     );
   }
