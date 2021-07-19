@@ -1,7 +1,8 @@
-import Formulario from "./Components/Formulario/Formulario";
-import ListaDeNotas from "./Components/ListaDeNotas/ListaDeNotas";
+import Formulario from "./Components/Formulario";
+import ListaDeNotas from "./Components/ListaDeNotas";
 
 import './Assets/App.css'
+import './Assets/index.css';
 
 const App = () => {
   return (
