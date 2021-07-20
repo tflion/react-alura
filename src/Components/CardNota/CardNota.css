@@ -6,7 +6,9 @@
     background-color: var(--fundo-detalhes);
     border-radius: 4px;
     flex-wrap: wrap;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.75);
     padding: 16px;
   }
   .card-nota_cabecalho {
@@ -14,14 +16,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: bold;
   }
   
   .card-nota_texto {
     margin-top: 8px;
     font-size: 1em;
+    color: #4901bd;
+
   }
   
   .card-nota_titulo {
     font-size: 1.2em;
     margin-right: 12px;
+    color: #38018f;
   }

@@ -8,22 +8,72 @@
     padding: 12px 40px;
   }
   .form-cadastro_input {
-    margin-top: 8px;
-    padding: 4px;
+    margin-top: 10px;
+    padding: 10px;
     border: none;
-    background-color: var(--fundo-detalhes);
-    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: rgb(233, 148, 20);
+    color: #38018f;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
     font-weight: 100;
+
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+
+  }
+
+  .form-cadastro_input::placeholder{
+    color: #fab647;
+  }
+   
+
+  .form-cadastro_textarea {
+    margin-top: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0b732;
+    color: #4901bd;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+    font-weight: 100;
+    resize: none;
+
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+
+  }
+  .form-cadastro_textarea::placeholder{
+    color: #ca7d00;
   }
   
   .form-cadastro_submit {
     align-self: flex-end;
     width: 30%;
-    background-color: var(--secundaria);
+    background-color:rgba(30,30, 50);
     color: white;
     font-weight: 400;
+    transition: 0.3s;
+    
+  }
+
+  .form-cadastro_submit:hover{
+    background-color: #9129d6;
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(112,112,112,1);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(112,112,112,1);
+    box-shadow: 0px 0px 20px 2px rgba(112,112,112,1);
+    
+
   }
   
   .form-cadastro_submit:active {
     background-color: var(--secundaria-ativa);
+  }
+
+  .titulo-gerenciador{
+    font-size: 1.5rem;
+    margin: 15px auto;
+    color: #9129d6;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }

@@ -27,7 +27,7 @@ class Formulario extends Component {
         return (
             <form className="form-cadastro"
                 onSubmit={this._criarNota.bind(this)} >
-                <h1>Gerenciador de Notas</h1>
+                <h1 className="titulo-gerenciador">Gerenciador de Notas</h1>
                 <input
                     type="text"
                     placeholder="Título"
@@ -37,7 +37,7 @@ class Formulario extends Component {
                 <textarea
                     rows={15}
                     placeholder="Escreva sua nota..."
-                    className="form-cadastro_input"
+                    className="form-cadastro_textarea"
                     onChange={this._handleMudancaTexto.bind(this)}
                 />
                 <button className="form-cadastro_input form-cadastro_submit">Criar Nota</button>
